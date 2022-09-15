@@ -41,6 +41,7 @@ export const login = ({email, password}) => async dispatch => {
 
     //dispatch(fetchQuoteOfTheDay());
   } catch (err) {
-    ToastAndroid.show(err.response.data.errors[0].msg, ToastAndroid.SHORT);
+    dispatch({type: REGISTER_SUCCESS, payload: ''});
+    //ToastAndroid.show(err.response.data.errors[0].msg, ToastAndroid.SHORT);
   }
 };
