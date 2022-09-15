@@ -18,8 +18,8 @@ import {
       case REGISTER_SUCCESS:
         return {
           ...state,
-          user: action.payload.user,
-          profile: action.payload.profile,
+          user: 'Kiran',
+          profile: '',
           isLogin: true,
         };
       case REGISTER_FAIL:
@@ -37,7 +37,6 @@ import {
       case UPDATE_USER:
         return {
           ...state,
-          // user:action.payload.user,
           profile: action.payload,
         };
       default:
