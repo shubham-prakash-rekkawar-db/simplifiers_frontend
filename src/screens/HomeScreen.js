@@ -110,7 +110,16 @@ const HomeScreen = props => {
             </TouchableOpacity>
           </View>
         </View>
-
+        <View>
+          <TouchableOpacity
+            onPress={() => {
+              props.navigation.navigate('CreateMeme');
+            }}>
+            <View style={styles.createMemeContainer}>
+              <Text style={styles.createMemeText}>Create a Meme</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
         <View style={styles.quoteContainer}>
           <Text style={styles.quoteText}>Quote of the day</Text>
           <View style={styles.quote}>

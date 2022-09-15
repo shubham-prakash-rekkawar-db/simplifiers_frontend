@@ -36,6 +36,7 @@ export default function MusicApp () {
   }
 
     return (
+        <View>
             <View style={styles.parentView}>
             <TouchableOpacity onPress={()=>handleAudio(soundStatus)}>
                 <ImageBackground source={require('../../assets/icons/widget.png')} resizeMode="cover" style={styles.image}>
@@ -44,6 +45,7 @@ export default function MusicApp () {
                 </ImageBackground>
             </TouchableOpacity>
             </View>
+        </View>
     );
 };
 
