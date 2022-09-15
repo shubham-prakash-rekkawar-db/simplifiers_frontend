@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import {StyleSheet} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Fontisto from 'react-native-vector-icons/Fontisto';
@@ -69,3 +69,4 @@ const TabNavigation = () => {
 export default TabNavigation;
 
 const styles = StyleSheet.create({});
+*/
