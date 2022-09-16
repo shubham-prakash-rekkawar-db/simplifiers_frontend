@@ -9,13 +9,15 @@ import {
   TextInput,
   TouchableOpacity,
   ScrollView,
-  ToastAndroid
+  ToastAndroid,
+  Linking
 } from 'react-native';
 import { colors } from '../constants/theme';
 import { connect } from 'react-redux';
 import { login } from '../redux/actions/auth';
 
 const Login = props => {
+  const phone = '+91 9975693889';
   const [state, setState] = useState({
     email: '',
     password: ''
@@ -47,10 +49,11 @@ const Login = props => {
       <View style={styles.container}>
         <View>
           <Image
-            source={require('../../assets/yoga_main.jpg')}
+            source={require('../../assets/login.jpg')}
             style={{
-              width: Dimensions.get('screen').width,
-              height: Dimensions.get('screen').width
+              marginLeft:50,
+              width: 340,
+              height: 340
             }}
           />
         </View>
@@ -87,6 +90,13 @@ const Login = props => {
               <Text style={styles.submitText}>Login</Text>
             </View>
           </TouchableOpacity>
+          <TouchableOpacity onPress={()=> Linking.openURL(`tel:${phone}`)}>
+            <View style = {styles.sosbutton}>
+            <Image style = {styles.sosbutton}
+            source={require('../../assets/sos.jpg')} 
+          />
+          </View>
+          </TouchableOpacity>
         </View>
       </View>
     </ScrollView>
@@ -110,7 +120,7 @@ const styles = StyleSheet.create({
     top: -10
   },
   textInput: {
-    backgroundColor: colors.accent,
+    backgroundColor: colors.mint,
     margin: 10,
     height: 40,
     borderRadius: 30,
@@ -131,7 +141,7 @@ const styles = StyleSheet.create({
     width: 150,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: colors.yellow,
+    backgroundColor: colors.navy_blue,
     height: 40,
     borderRadius: 60
   },
@@ -155,5 +165,13 @@ const styles = StyleSheet.create({
     paddingRight: 20,
     paddingBottom: 10,
     color: colors.secondary
-  }
+  },
+  sosbutton:{
+    top:2,
+    justifyContent: 'center',
+    alignItems: 'center',
+    height:80,
+    width:100,
+    marginLeft:105
+ },
 });

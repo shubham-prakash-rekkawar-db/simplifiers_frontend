@@ -229,7 +229,7 @@ const styles = StyleSheet.create({
   button: {
     width: 150,
     height: 40,
-    backgroundColor: colors.black,
+    backgroundColor: colors.blue,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 6,
@@ -252,7 +252,7 @@ const styles = StyleSheet.create({
     margin: 10,
     borderRadius: 20,
     elevation: 3,
-    backgroundColor: '#face4b',
+    backgroundColor: '#68BBE3',
     borderTopRightRadius: 0,
   },
   tracksContainer: {

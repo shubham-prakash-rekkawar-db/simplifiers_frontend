@@ -83,7 +83,7 @@ const Signup = props => {
       <View style={styles.container}>
         <View>
           <Image
-            source={require('../../assets/yoga_main.jpg')}
+            source={require('../../assets/signup.jpg')}
             style={{
               width: Dimensions.get('screen').width,
               height: 160
@@ -244,7 +244,7 @@ const styles = StyleSheet.create({
     width: '100%'
   },
   textInput: {
-    backgroundColor: colors.accent,
+    backgroundColor: colors.mint,
     margin: 10,
     height: 40,
     borderRadius: 30,
@@ -266,7 +266,7 @@ const styles = StyleSheet.create({
     width: 150,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: colors.yellow,
+    backgroundColor: colors.navy_blue,
     height: 40,
     borderRadius: 60
   },
@@ -278,7 +278,7 @@ const styles = StyleSheet.create({
     letterSpacing: 2
   },
   headerText: {
-    color: colors.secondary,
+    color: colors.blue_grotto,
     fontSize: 40,
     textTransform: 'uppercase',
     padding: 10,

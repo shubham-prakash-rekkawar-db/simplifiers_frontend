@@ -1,6 +1,6 @@
 const colors = {
     accent: '#e7eed1',
-    primary: '#74b35b',
+    primary: '#B1D4E0',
     secondary: '#46703b',
     tertiary: '#b1bd74',
     black: '#000000',
@@ -17,7 +17,13 @@ const colors = {
     lightLilac: '#ffefef',
     cream: '#fdfff5',
     brown: '#8d5845',
-    yellow: '#face1b'
+    yellow: '#face1b',
+    blue: '#2E8BC0',
+    baby_blue : '#D4F1F4',
+    blue_grotto : '#189AB4',
+    navy_blue : '#05445E',
+    mauve:'#b0b0ba',
+    mint:'#E0EBE5',
   };
   
   const sizes = {
