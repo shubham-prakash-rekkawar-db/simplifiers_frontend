@@ -51,7 +51,6 @@ const TabNavigation = () => {
             <Feather name="home" size={21} color={color}/>
           )
       })}/>
-         
     </Tab.Navigator>
   );
 };

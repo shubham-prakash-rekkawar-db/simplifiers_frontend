@@ -110,7 +110,6 @@ const HomeScreen = props => {
             </TouchableOpacity>
           </View>
         </View>
-
         <View style={styles.quoteContainer}>
           <Text style={styles.quoteText}>Quote of the day</Text>
           <View style={styles.quote}>
